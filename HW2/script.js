@@ -50,11 +50,12 @@ function renderSongs(songs) {
     });
 }
 
-function albumList() {
+function albumList(query) {
     const modalBody = document.querySelector(".modal-body")
     modalBody.innerHTML=""
 
-    search(inputValue)
+    fetch(spotifyEndpoint + query)
+    .then(response => response.json())
     .then(songs => {
         let addedAlbums = []
 
@@ -81,5 +82,6 @@ document.getElementById("button-search").addEventListener("click", () => {
 })
 
 document.getElementById("list-button").addEventListener("click", () => {
-    albumList()
+    const query = document.getElementById("searchField").value
+    albumList(query)
 })
