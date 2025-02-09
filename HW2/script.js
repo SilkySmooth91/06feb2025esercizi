@@ -30,7 +30,7 @@ function renderSongs(songs) {
         img.classList.add("card-img-top")
 
         const cardBody = document.createElement("div")
-        cardBody.classList.add("card-body", "px-0")
+        cardBody.classList.add("card-body")
 
         const cardTitle = document.createElement("h5")
         cardTitle.classList.add("card-title", "fw-bold")

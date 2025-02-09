@@ -229,6 +229,19 @@ h5 {
   width: 200px;
 }
 
+.card {
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px 2px black;
+  background-color: #10161e !important;
+  z-index: 10;
+}
+
 .card-img-top {
   border-radius: 15px;
+  margin: auto;
+  padding-top: 0.5rem;
 }
