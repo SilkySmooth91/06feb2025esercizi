@@ -47,7 +47,7 @@ function renderSongs(songs) {
         card.appendChild(cardBody)
 
         showCards.appendChild(card)
-    });
+    })
 }
 
 function albumList(query) {
